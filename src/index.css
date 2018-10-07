@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.navbar-brand > img{
+  max-width: 300px;
+}
+.navbar{
+  border-bottom:solid grey 1px
+}
