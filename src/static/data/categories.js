@@ -13,4 +13,4 @@ module.exports = [
     {"id":12,"name":"จารึก","url":"sila"},
     {"id":13, "name":"คติจักรวาล","url":"galaxy"},
     {"id":14, "name":"สำรวจข้อมูล","url":"dashboard"}
-]
+];
