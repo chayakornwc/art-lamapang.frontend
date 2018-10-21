@@ -5477,6 +5477,23 @@ h4, h5 {
   font-weight: bold;
   margin-top: .5em; }
 
+.nav-seconds ::-webkit-scrollbar-track {
+  display: none !important;
+  height: 0;
+  color: transparent; }
+
+.nav-seconds ::-webkit-scrollbar-thumb {
+  display: none !important;
+  height: 0;
+  color: transparent; }
+
+.nav-seconds .nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-radius: 5px;
+  white-space: nowrap;
+  flex-wrap: unset !important; }
+
 .navbar-brand img {
   max-width: 300px; }
 

@@ -12,6 +12,8 @@ import {
   InputGroupText,
   Input
  } from 'reactstrap';
+ import {Switch, Link} from 'react-router-dom';
+const menu = require('../static/data/categories');
 
 export default class Navigationbar extends React.Component {
   constructor(props) {
@@ -28,7 +30,7 @@ export default class Navigationbar extends React.Component {
     });
   }
   render() {
-    console.log(this.props.brand)
+    
     return (
       <div>
         <Navbar color="#fff" light expand="md">
@@ -56,6 +58,20 @@ export default class Navigationbar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
+       
+        <div className="container">
+            <nav className="nav-seconds">
+                <ul className="nav">
+                    {menu && menu.map((e,i)=>{
+                        return(   
+                            <li className="nav-item" key={e.id}>
+                              <Link className="nav-link" to={e.url}>{e.name}</Link>
+                            </li>          
+                        );
+                    })}
+                </ul>
+            </nav>
+        </div>
       </div>
     );
   }
