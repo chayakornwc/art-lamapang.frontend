@@ -1,0 +1,131 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'CS ChatThaiUI';
+    src: url('../static/font/CSChatThaiUI.woff2') format('woff2'),
+        url('../static/font/CSChatThaiUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CS ChatThai';
+    src: url('../static/font/CSChatThai.woff2') format('woff2'),
+        url('../static/font/CSChatThai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body {
+    font-family: "CS ChatThaiUI", "CS ChatThai",   -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px; // TODO: 
+    line-height: 1.428571429;
+    color: black;
+    box-sizing: border-box;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 0 !important;
+}
+
+h4,h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: .5em;
+}
+.navbar-brand {
+    img{
+        max-width: 300px;
+    }
+  }
+  .navbar{
+    border-bottom:solid grey 1px
+  }
+.loading-box {
+    height: 45vh;
+}
+
+.dimmer {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 10;
+}
+
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999 !important;
+}
+
+.link-text {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.gray-bg {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.error-message-bar{
+    position: fixed;
+    background: rgb(255, 105, 97);
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40x;
+    transition: all .25s ease-in-out;
+
+    p {
+        margin-bottom: 0;
+        text-align: center;
+        flex: 1;
+    }
+    
+    &.show-noti {
+        opacity: 1;
+        z-index: 99;
+    }
+    &.close-noti {
+        opacity: 0;
+        z-index: -99;
+    }
+}

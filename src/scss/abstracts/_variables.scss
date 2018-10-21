@@ -1,0 +1,51 @@
+// 
+// FILE NOTE: Put custom bootstrap theme in here (Only overrided variables)
+//
+// CAUTION : Cannot put bootstrap class in here it won't be applied.
+// Put custom css in app.scss 
+// .btn-danger { // NOTE: Move this to app.scss
+//     background-color: yellow;
+// }
+
+// NOTE: Example of override bootstrap variables
+// $btn-border-width: 2px;
+
+// Responsive Media (Reference with bootstrap framework)
+$lg-screen: 992px;
+$md-screen: 768px;
+
+// Theme colors:
+$blue: #0078FF;
+$dark-blue: #2969a5;
+$lighter-gray: #f9f9f9;
+$light-gray: #EDEFF2;
+$gray: #8C8C8C;
+$dark-gray: #323232;
+$yellow: #EEC315;
+$dark-yellow: #D5AB00;
+$orange: #F19F4D;
+$dark-green: #018856;
+$light-green: #37C883;
+$line-green: #2CBF13;
+$lime-green: #57BC90;
+$dark-green: #018856;
+$red: rgb(209, 81, 81);
+$white: #ffffff;
+$black: #000;
+
+// Modify Bootstrap _variables
+
+//Navbar
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          $blue;
+$navbar-light-active-color:         $blue;
+
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-padding-y:          .21rem ;
+$navbar-toggler-padding-x:          .4rem ;
+
+//Links
+$link-hover-decoration:     none;
+
+//Button
+$btn-border-radius:   0;
