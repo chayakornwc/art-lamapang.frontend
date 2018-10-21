@@ -4,7 +4,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createBrowserHistory } from "history";
 import { Router } from "react-router-dom";
-import { create } from 'domain';
+
 const hist = createBrowserHistory();
 const renderApp = () => 
 ReactDOM.render(
