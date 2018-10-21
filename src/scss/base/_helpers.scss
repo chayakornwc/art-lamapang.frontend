@@ -1,0 +1,82 @@
+.noscroll {
+    overflow: hidden;
+    position: fixed;
+    max-width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.zero-margin-top {
+    margin-top: 0;
+}
+
+.zero-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-top-xs {
+    margin-top: 10px;
+}
+
+.margin-top-sm {
+    margin-top: 15px;
+}
+
+.margin-top-md {
+    margin-top: 30px;
+}
+
+.margin-bottom-xs {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-md {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-big {
+    margin-bottom: 45px;
+}
+
+.zero-padding-right {
+    padding-right: 0;
+}
+
+.zero-padding-left {
+    padding-left: 0;
+}
+
+.zero-margin {
+    margin: 0;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.block {
+    display: block;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-decoration-note {
+    text-decoration: none !important;
+}
