@@ -58,21 +58,18 @@ export default class Navigationbar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-       
-        <div className="container">
             <nav className="nav-seconds">
                 <ul className="nav">
                     {menu && menu.map((e,i)=>{
                         return(   
-                            <li className="nav-item" key={e.id}>
-                              <Link className="nav-link" to={e.url}>{e.name}</Link>
+                            <li className="nav-item hover-glow" key={e.id}>
+                              <Link className="nav-link " to={e.url}>{e.name}</Link>
                             </li>          
                         );
                     })}
                 </ul>
             </nav>
         </div>
-      </div>
     );
   }
 }

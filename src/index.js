@@ -3,13 +3,25 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createBrowserHistory } from "history";
-import {BrowserRouter as  Router } from "react-router-dom";
+import { Router } from "react-router-dom";
+import {createStore, applyMiddleware} from 'redux';
+import {Provider} from 'react-redux';
+import thunk from 'redux-thunk';
+import reducers from './stores/redux/reducers';
 
+const store = createStore(
+  reducers,
+  applyMiddleware(thunk)
+);
+
+const hist = createBrowserHistory();
 const renderApp = () => 
 ReactDOM.render(
-  <Router >
+  <Provider store={store}>
+  <Router history={hist} >
     <App />
-    </Router>,
+    </Router>
+    </Provider>,
   document.getElementById('root')
 );
 
