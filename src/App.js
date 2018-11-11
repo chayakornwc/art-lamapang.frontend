@@ -24,7 +24,7 @@ class App extends Component {
               {routes.map((value,index)=>{
                 return(
                   <Route path={value.path}
-                   key={value.index}
+                   key={index}
                    name={value.name} 
                    component={value.component}
                    exact={value.exact} />
