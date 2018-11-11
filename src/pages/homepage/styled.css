@@ -1,0 +1,14 @@
+.recomended-image {
+  width: 100%;
+  height: auto;
+  max-height: 800px; }
+
+.big-label {
+  margin-bottom: 70px;
+  transform: translateY(-50%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+  padding: 40px;
+  background: #fff; }
+
+.big-label > div:nth-child(1n) {
+  padding-bottom: .5rem; }
