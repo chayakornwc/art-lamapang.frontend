@@ -12,7 +12,7 @@ export const fetchPosts  = ((url=null)=> (dispatch)=>{
         url = composeFetchUrl();
     }
     dispatch({type:POST_ACTION.FETCHING});
-    return axios.get(`${url}posts`,{}).then((res)=>{
+    return axios.get(`${url}posts?filter[order]=publishedDate%20DESC&filter[limit]=9`,{}).then((res)=>{
         dispatch({
             type:POST_ACTION.FETCHED,
             payload:res.data

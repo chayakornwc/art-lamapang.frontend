@@ -4,12 +4,29 @@
     max-height:800px ;
 }
 .big-label{
-    margin-bottom: 70px;
     transform: translateY(-50%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
-    padding: 40px;
+    padding: 30px;
     background: #fff;
 }
 .big-label>div:nth-child(1n){
     padding-bottom: .5rem;
+}
+
+
+.image-feature{
+    overflow: hidden;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+    &:hover{
+        transform: scale3d(1.05, 1.05, 1);
+    }
+    
 }
